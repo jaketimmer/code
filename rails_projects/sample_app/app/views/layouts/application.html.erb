@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %><!-- arranges to include stylesheet-->
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %><!-- arranges to include javascript file-->
-  <%= csrf_meta_tags %> <!--prevents cross site request forgery-->
-</head>
-<body>
-
-<%= yield %><!-- <= this is here to insert the contents of the page-->
-
-</body>
+	<head>
+  		<title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %><!-- arranges to include stylesheet-->
+  		<%= javascript_include_tag "application", "data-turbolinks-track" => true %><!-- arranges to include javascript file-->
+  		<%= csrf_meta_tags %> <!--prevents cross site request forgery-->
+	</head>
+	<body>
+		<%= yield %><!-- <= this is here to insert the contents of the page-->
+	</body>
 </html>
